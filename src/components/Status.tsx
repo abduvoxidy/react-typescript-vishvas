@@ -1,7 +1,7 @@
 import React from "react";
 
 type StatusProps = {
-  status: string;
+  status: "loading" | "success" | "error";
 };
 
 function Status(props: StatusProps) {
@@ -11,7 +11,7 @@ function Status(props: StatusProps) {
   } else if (props.status === "success") {
     message = "Data fetched succesfully";
   } else if (props.status === "error") {
-    ("Error fetching data");
+    message = "Error fetching data";
   }
   return (
     <div>

@@ -1,5 +1,3 @@
-import React, { FC } from "react";
-
 type Props = {
   name: string;
   age?: number;
